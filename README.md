@@ -26,3 +26,10 @@ To stop and remove containers, networks, images, and volumes:
 ```
 $ docker-compose down -v
 ```
+
+# Notes
+
+In terms of actual deployment to a production environment, you'll probably want to use a:
+
+Fully managed database service -- like RDS or Cloud SQL -- rather than managing your own Postgres instance within a container.
+Non-root user for the db and nginx services
